@@ -19,3 +19,31 @@
   "createdAt": "datetime",
   "updatedAt": "datetime"
 }
+
+
+
+## Sprint 2 - Módulo Receitas
+
+### Funcionalidades
+
+- Cadastro de receitas vinculadas a chefs
+- Listagem de receitas (com filtros e paginação)
+- Busca por receita específica
+- Atualização de dados da receita
+- Remoção de receita
+- Relacionamento Many-to-Many com chefs
+
+### Estrutura do Modelo Receita
+{
+  "id": "string/number",
+  "titulo": "string",
+  "descricao": "string",
+  "ingredientes": "text",
+  "modoPreparo": "text",
+  "tempoPreparo": "number",
+  "porcoes": "number",
+  "dificuldade": "string",
+  "chefs": ["array of chef ids"],
+  "createdAt": "datetime",
+  "updatedAt": "datetime"
+}
